@@ -12,7 +12,25 @@
   },
   "tauri": {
     "allowlist": {
-      "all": true
+      "http": {
+        "request": true,
+        "scope": ["https://api.github.com/repos/suggestionsbot/*", "https://api.github.com/repos/acollierr17/*", "https://*.unsplash.com/*"]
+      },
+      "dialog": {
+        "message": true,
+        "open": true
+      },
+      "path": {
+        "all": true
+      },
+      "fs": {
+        "scope": ["$APP/backgrounds/*"],
+        "writeFile": true,
+        "readFile": true,
+        "createDir": true,
+        "readDir": true,
+        "copyFile": true
+      }
     },
     "bundle": {
       "active": true,
@@ -29,7 +47,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "dev.acollier.desktop-changer",
       "longDescription": "",
       "macOS": {
         "entitlements": null,

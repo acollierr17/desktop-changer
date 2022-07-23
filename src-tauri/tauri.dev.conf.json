@@ -1,0 +1,10 @@
+ˆ¨ˆˆ{
+  "$schema": "../node_modules/@tauri-apps/cli/schema.json",
+  "tauri": {
+    "allowlist": {
+      "fs": {
+        "scope": ["$DOWNLOAD/*"]
+      }
+    }
+  }
+}
